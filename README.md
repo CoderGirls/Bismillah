@@ -1,2 +1,0 @@
-# Bismillah
-Very first project
