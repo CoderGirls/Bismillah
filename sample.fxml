@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane blendMode="DARKEN" prefHeight="407.0" prefWidth="657.0">
+         <children>
+            <TextField fx:id="txt" layoutX="466.0" layoutY="263.0" onAction="#what" />
+            <Label fx:id="msg" layoutX="77.0" layoutY="30.0" prefHeight="36.0" prefWidth="231.0" textFill="#c90e0e">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <TextArea layoutX="48.0" layoutY="224.0" prefHeight="103.0" prefWidth="364.0" text="1/ Le nombre mysterieux est compris entre 0 et 100&#10;&#10;2/Vous avez 10 essais&#10;&#10;3/Suivez  les indications qui s'affichent pendant la partie ">
+               <font>
+                  <Font size="15.0" />
+               </font></TextArea>
+            <Button fx:id="start" layoutX="504.0" layoutY="346.0" mnemonicParsing="false" onAction="#what" prefHeight="22.0" prefWidth="72.0" text="Start" />
+            <ImageView fitHeight="150.0" fitWidth="193.0" layoutX="472.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Yed.PNG" />
+               </image>
+            </ImageView>
+            <Label fx:id="msg1" layoutX="115.0" layoutY="168.0" onDragDetected="#what" prefHeight="36.0" prefWidth="231.0" textFill="#685454">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
